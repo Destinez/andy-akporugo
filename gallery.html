@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andy Akporugo & Associates</title>
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+
+  <meta property="og:url" content="https://www.aakporugo.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Andy Apkorugo & Associates" />
+  <meta property="og:description" content="" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="Andy Apkorugo & Associates">
+
+
+  <link rel="stylesheet" href="assets/public/lib/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/public/main0dca.css?v=jMvAMHkPQW0pWUjFzu5fww==">
+  <link rel="stylesheet" media="print" href="assets/public/printf1af.css?v=fZjumXc7xx2M7XspLdmOEw==">
+
+  <link rel="icon" href="favicon5e1f.ico?v=2" type="image/x-icon">
+  <link rel="icon" sizes="128×128" href="assets/public/images/icon-128x128.png">
+  <link rel="icon" sizes="192×192" href="assets/public/images/icon-192x192.png">
+  <link rel="apple-touch-icon" href="assets/public/images/icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="120×120" href="assets/public/images/icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152×152" href="assets/public/images/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180×180" href="assets/public/images/icon-180x180.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+
+
+</head>
+
+<body>
+  <div class="app" id="app" style="height:100%">
+    <div is="navbar" inline-template="inline-template">
+      <div class="navbar__wrapper">
+        <header class="navbar navbar--fixed navbar--home bg-white">
+          <div class="navbar__container container">
+            <div class="navbar__left">
+              <a class="navbar__brand" href="index.html" aria-label="Andy Apkorugo & Associates LLP">
+                <img class="navbar__brand-image" src="assets/public/images/logo.png" alt="Apkorugo" />
+              </a>
+            </div>
+
+            <div role="navigation" aria-label="main" class="navbar__right">
+              <div class="navbar__links">
+                <div class="hamburger-menu">
+                  <input id="menu__toggle" type="checkbox" />
+                  <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="navbar__menu">
+                <button class="navbar__menu-button" v-bind:aria-expanded="isMenuOpen ? 'true' : 'false'"
+                  aria-label="Toggle Menu" v-on:click="toggleMenu()">
+                  <span class="navbar__icon icon" v-bind:class="menuIconClasses"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </div>
+    <!--startindex-->
+
+
+    <div role="main" class="">
+
+      <div class="navbar__page" v-tabbable="!isAnyMenuOpen">
+
+        <section class="page-hero " style="background-image: url('assets/public/images/section-heading.svg');">
+          <div class="page-hero__gradient page-hero__gradient--left"></div>
+          <div class="page-hero__container">
+            <div class="page-hero__left">
+
+              <h1 class="page-hero__title">
+                Gallery
+              </h1>
+
+            </div>
+          </div>
+        </section>
+
+        <div is="general-content" inline-template
+          tabs="[{&quot;index&quot;:0,&quot;label&quot;:&quot;art&quot;,&quot;key&quot;:&quot;art&quot;,&quot;TabsCount&quot;:4},{&quot;index&quot;:1,&quot;label&quot;:&quot;video&quot;,&quot;key&quot;:&quot;video&quot;,&quot;TabsCount&quot;:4}]">
+          <div class="general-content">
+            <div class="tabs">
+              <div class="tabs__waypoint" v-bind:class="{'tabs__waypoint--sticky': isStuck}"></div>
+              <div class="tabs__container"
+                v-bind:class="{'tabs__container--sticky': isStuck, 'tabs--hide': !navbarState, 'tabs__container--hide': isAnyMenuOpen}">
+                <div class="tabs__container__menu">
+
+                  <ul class="tabs__container__menu__tab-list" role="tablist">
+                    <li class="tabs__container__menu__tab" v-bind:class="tabClasses('art')"
+                      v-on:click="setTabAndRoute('art','0')">
+                      <button v-bind:aria-selected="activeTabKey === 'about' ? 'true' : 'false'" id="art-tab" role="tab"
+                        aria-posinset="0" aria-setsize="4" aria-label="art" aria-controls="art-tabpanel"
+                        ref="button-art">
+                        <h2>
+                          Art Gallery
+                        </h2>
+                      </button>
+                    </li>
+
+                    <li class="tabs__container__menu__tab" v-bind:class="tabClasses('video')"
+                      v-on:click="setTabAndRoute('video','3')">
+                      <button v-bind:aria-selected="activeTabKey === 'video' ? 'true' : 'false'" id="video-tab"
+                        role="tab" aria-posinset="3" aria-setsize="4" aria-label="video" aria-controls="video-tabpanel1"
+                        ref="button-video">
+                        <h2>
+                          Video Gallery
+                        </h2>
+                      </button>
+                    </li>
+
+                    <div class="tabs__filler">&nbsp;</div>
+                    <hr class="tabs__container__underline" ref="underline" v-bind:style="underlineStyle" />
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+
+              <div class="tab-content" v-bind:class="{'tab-content--active': isActiveTab('art')}"
+                v-tabbable="isActiveTab('art')" role="tabpanel" tabindex="0" id="art-tabpanel"
+                aria-labelledby="artt-tab">
+
+                <section class="section section--component">
+                  <div class="videos_container">
+
+                    <section class="img-gallery-magnific">
+
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/908/?random" title="5.jpg">
+                          <img src="https://unsplash.it/908/?random" alt="5.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/978/?random" title="6.jpg">
+                          <img src="https://unsplash.it/978/?random" alt="6.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/857/?random" title="7.jpg">
+                          <img src="https://unsplash.it/857/?random" alt="7.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/905/?random" title="8.jpg">
+                          <img src="https://unsplash.it/905/?random" alt="8.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/1230/?random" title="12.jpg">
+                          <img src="https://unsplash.it/1230/?random" alt="12.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/800/?random" title="13.jpg">
+                          <img src="https://unsplash.it/800/?random" alt="13.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/930/?random" title="14.jpg">
+                          <img src="https://unsplash.it/930/?random" alt="14.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/999/?random" title="15.jpg">
+                          <img src="https://unsplash.it/999/?random" alt="15.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="magnific-img">
+                        <a class="image-popup-vertical-fit" href="https://unsplash.it/897/?random" title="16.jpg">
+                          <img src="https://unsplash.it/897/?random" alt="16.jpg" />
+                          <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </section>
+                  </div>
+                </section>
+
+
+              </div>
+              <div class="tab-content" v-bind:class="{'tab-content--active': isActiveTab('video')}"
+                v-tabbable="isActiveTab('video')" role="tabpanel" tabindex="0" id="video-tabpanel"
+                aria-labelledby="video-tab">
+
+                <section class="section section--component">
+                  <div class="overview__rich-text">
+                    <div class="container">
+                      <div class="video-container">
+
+                        <div class="inner-container">
+
+                          <div class="responsive-video">
+                            <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600"
+                              height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                              allowFullScreen></iframe>
+                          </div>
+                        </div>
+
+                        <div class="inner-container">
+                          <div class="responsive-video">
+                            <iframe src="https://www.youtube.com/embed/aBnGzklDHnM?rel=0&amp;showinfo=0" width="600"
+                              height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                              allowFullScreen></iframe>
+                          </div>
+                        </div>
+                        <div class="inner-container">
+                          <div class="responsive-video">
+                            <iframe src="https://www.youtube.com/embed/aBnGzklDHnM?rel=0&amp;showinfo=0" width="600"
+                              height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                              allowFullScreen></iframe>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="video-container">
+
+                        <div class="inner-container">
+
+                          <div class="responsive-video">
+                            <iframe src="https://www.youtube.com/embed/6v2L2UGZJAM?rel=0&amp;showinfo=0" width="600"
+                              height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                              allowFullScreen></iframe>
+                          </div>
+                        </div>
+
+                        <div class="inner-container">
+                          <div class="responsive-video">
+                            <iframe src="https://www.youtube.com/embed/aBnGzklDHnM?rel=0&amp;showinfo=0" width="600"
+                              height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                              allowFullScreen></iframe>
+                          </div>
+
+                        </div>
+                        <div class="inner-container">
+                          <div class="responsive-video">
+                            <iframe src="https://www.youtube.com/embed/aBnGzklDHnM?rel=0&amp;showinfo=0" width="600"
+                              height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                              allowFullScreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="homepage-inquiry-panel homepage-inquiry-panel--service">
+      <div class="homepage-inquiry-panel__top">
+        <div class="hamburger-menu homepage-inquiry-panel__close">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <i aria-hidden="true" class="icon icon__close"></i>
+          </label>
+        </div>
+        <span v-html="'Navigation Menu'"></span>
+      </div>
+      <div class="homepage-inquiry-panel__scrollable homepage-inquiry-panel__scrollable--blue">
+        <div>
+          <div class="homepage-inquiry-service-list">
+            <h2 class="homepage-inquiry-service-list__heading">Quick Links</h2>
+            <ul class="homepage-inquiry-service-list__list">
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="firm.html">
+                  The Firm
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="lawyers.html">
+                  Lawyers
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="expertise.html">
+                  Expertise
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="careers.html">
+                  Careers
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="contact.html">
+                  Consultation
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="gallery.html">
+                  Gallery
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="homepage-inquiry-service-list">
+            <h2 class="homepage-inquiry-service-list__heading">Practice Areas</h2>
+            <ul class="homepage-inquiry-service-list__list">
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="expertise.html?tab=commercial">
+                  Commercial and Corporate Practice
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="expertise.html?tab=debt">
+                  Debt Recovery and Banking
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="expertise.html">
+                  Libel and Media Law
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="expertise.html?tab=realestate">
+                  Real Estate
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="homepage-inquiry-service-list">
+            <h2 class="homepage-inquiry-service-list__heading">Inquiries</h2>
+            <div class="homepage-inquiry-service-list__item"><span class="text-warning">Address:</span> 1B Adekunle
+              Fadjuyi way, GRA Ikeja,
+              Lagos</div>
+            <div class="homepage-inquiry-service-list__item"><span class="text-warning">Tel:</span> <a
+                href="tel:+234-123455678">+234-8012345678
+              </a></div>
+            <div class="homepage-inquiry-service-list__item"><span class="text-warning">Email:</span> <a
+                href="mailto:info@aakporugo.com">info@aakporugo.com
+              </a></div>
+
+          </div>
+          <div class="homepage-inquiry-service-list">
+
+            <ul class="homepage-inquiry-service-list__list">
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="homepage-inquiry-service-list__item">
+                <a class="homepage-inquiry-service-list__link" href="#">
+                  Use of Cookies
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Footer -->
+<footer class="text-center text-lg-start text-white">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+     
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold my-4">
+            <i class="fas fa-gem me-3"></i>Andy Akporugo & Associates LLC
+          </h6>
+          <p>
+           We are committed to Excellence, Integrity and Competence
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mt-4">
+            Quick links
+          </h6>
+          <p class="">
+            <a href="expertise.html" class="text-reset">Expertise</a>
+          </p>
+          <p>
+            <a href="lawyers.html" class="text-reset">Lawyers</a>
+          </p>
+          <p>
+            <a href="firm.html" class="text-reset">The Firm</a>
+          </p>
+          <p>
+            <a href="careers.html" class="text-reset">Careers</a>
+          </p>
+          <p>
+            <a href="contact.html" class="text-reset">Consultation</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mt-4 ">Contact</h6>
+          <p><i class="fas fa-home me-3"></i>1B Adekunle Fadjuyi way, GRA Ikeja,
+              Lagos</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            <a
+            href="mailto:info@aakporugo.com">info@aakporugo.com
+        </a>
+          </p>
+          <p><i class="fas fa-phone me-3"></i> <a
+                              href="tel:+234-123455678">+234-8012345678
+                          </a></p>
+          <p><i class="fas fa-print me-3"></i> <a
+                              href="tel:+234-123455678">+234-8012345678
+                          </a></p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://www.aakporugo.com/">Andy Akporugo & Associates</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+  </div>
+  <script src="assets/public/lib/jquery.js"></script>
+
+  <script src="assets/public/lib/bootstrap.min.js"></script>
+  <script src="assets/public/lib/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="assets/public/bundlecb92.js?v=i67Qduss1tU2MfyuM1jKUA=="></script>
+
+</body>
+
+
+</html>

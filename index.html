@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Andy Akporugo & Associates</title>
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+
+    <meta property="og:url" content="https://www.aakporugo.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Andy Apkorugo & Associates" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="Andy Apkorugo & Associates">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/public/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/public/main0dca.css?v=jMvAMHkPQW0pWUjFzu5fww==">
+    <link rel="stylesheet" media="print" href="assets/public/printf1af.css?v=fZjumXc7xx2M7XspLdmOEw==">
+
+    <link rel="icon" href="favicon5e1f.ico?v=2" type="image/x-icon">
+    <link rel="icon" sizes="128×128" href="assets/public/images/icon-128x128.png">
+    <link rel="icon" sizes="192×192" href="assets/public/images/icon-192x192.png">
+    <link rel="apple-touch-icon" href="assets/public/images/icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120×120" href="assets/public/images/icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152×152" href="assets/public/images/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180×180" href="assets/public/images/icon-180x180.png">
+
+
+</head>
+
+
+<body style="background-image: none!important;" >
+ 
+    <div class="" id="app" style="height:100%">
+
+        <div is="navbar" inline-template="inline-template">
+            <div class="navbar__wrapper">
+                <header class="navbar navbar--fixed navbar--home">
+                    <div class="navbar__container container">
+                        <div class="navbar__left">
+                            <a class="navbar__brand" href="index.html" aria-label="Andy Apkorugo & Associates LLP">
+                                <img class="navbar__brand-image" src="assets/public/images/logo.png" alt="Apkorugo" />
+                            </a>
+                        </div>
+
+                        <div role="navigation" aria-label="main" class="navbar__right">
+                            <div class="navbar__links">
+                                <div class="hamburger-menu">
+                                    <input id="menu__toggle" type="checkbox" />
+                                    <label class="menu__btn" for="menu__toggle">
+                                        <span></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="navbar__menu">
+                                <button class="navbar__menu-button" v-bind:aria-expanded="isMenuOpen ? 'true' : 'false'"
+                                    aria-label="Toggle Menu" v-on:click="toggleMenu()">
+                                    <span class="navbar__icon icon" v-bind:class="menuIconClasses"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="search" v-bind:class="searchClasses" v-tabbable="isSearchOpen"></div>
+            </div>
+        </div>
+        <!--startindex-->
+
+        <div>
+            <h1 class="contentTitle"></h1>
+            <div class="contentDescription"></div>
+        </div>
+        <div class="pattern-background">
+            <video autoplay muted loop>
+                <source src="assets/public/video/background.mp4">
+            </video>
+
+        </div>
+
+        <div  is="homepage-inquiry" inline-template="inline-template" v-bind:use-query-string="false"
+            v-bind:initial-state="{&quot;filters&quot;:{&quot;page&quot;:1},&quot;response&quot;:{&quot;peopleViewAllLink&quot;:&quot;/people&quot;,&quot;expertiseViewAllLink&quot;:&quot;/site-search?section=expertise&quot;,&quot;insightsViewAllLink&quot;:&quot;/site-search?section=insights&quot;,&quot;otherViewAllLink&quot;:&quot;/site-search?section=other&quot;,&quot;people&quot;:{&quot;hasMore&quot;:false,&quot;results&quot;:[],&quot;categories&quot;:null},&quot;expertise&quot;:{&quot;hasMore&quot;:false,&quot;results&quot;:[],&quot;categories&quot;:null},&quot;insights&quot;:{&quot;hasMore&quot;:false,&quot;results&quot;:[],&quot;categories&quot;:null},&quot;other&quot;:{&quot;hasMore&quot;:false,&quot;results&quot;:[],&quot;categories&quot;:null}}}">
+            <div class="navbar__page-bottom" v-bind:class="{'navbar__page-bottom--active' : isPanelOpen}">
+                <div class="homepage-inquiry" v-bind:class="rootClasses">
+
+                    <div class="homepage-inquiry__padding-wrapper">
+                        <div class="homepage-inquiry__intro">
+                            <div class="homepage-inquiry__top">
+                                <div class="homepage-inquiry__top-text">
+                                    <div class="homepage-inquiry__top-text--desktop">
+                                        <div class="container">
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-8 mr-4 pr-4">
+                                                    <div class="h6 we-are">We are</div>
+                                                    <div class="h4 committed-to">Committed to</div>
+                                                    <span class="dynamic-header-text h2 text-warning" style="font-size: 3rem;"></span><span>|</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="homepage-inquiry__top-text--mobile">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-12">
+                                                <div class="h4 text-center font-weight-bold">We are</div>
+                                                <div class="h2 text-center font-weight-bolder ">Committed to</div>
+                                                <div class="dynamic-header-text h1 text-center text-warning">| </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homepage-inquiry__links">
+                            <div class="container">
+                                <div class="row justify-content-center" id="homepage-inquiry__links-box">
+                                    <div class="col-md-2">
+
+                                    </div>
+
+                                    <div class="col-md-6 p-3 d-flex justify-content-center align-items-center">
+                                        <a href="contact.html">
+                                            <button class="btn btn-outline-info p-3">
+                                                Book a Free Consultation
+                                            </button>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-4 p-3 d-flex justify-content-center">
+                                        <div class="row">
+                                            <div
+                                                class="col-6 d-flex justify-content-end align-items-center quick-nav-item">
+                                                <a href="firm.html">The Firm</a>
+                                            </div>
+                                            <div
+                                                class="col-6 d-flex justify-content-end align-items-center quick-nav-item">
+                                                <a href="expertise.html">Expertise</a>
+                                            </div>
+
+                                            <div
+                                                class="col-6 d-flex justify-content-end align-items-center quick-nav-item">
+                                                <a href="lawyers.html">Lawyers</a>
+                                            </div>
+                                            <div
+                                                class="col-6 d-flex justify-content-end align-items-center quick-nav-item">
+                                                <a href="careers.html">Careers</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="homepage-inquiry-panel homepage-inquiry-panel--service">
+                        <div class="homepage-inquiry-panel__top">
+                            <div class="hamburger-menu homepage-inquiry-panel__close">
+                                <input id="menu__toggle" type="checkbox" />
+                                <label class="menu__btn" for="menu__toggle">
+                                    <i aria-hidden="true" class="icon icon__close"></i>
+                                </label>
+                            </div>
+                            <span v-html="'Navigation Menu'"></span>
+                        </div>
+                        <div class="homepage-inquiry-panel__scrollable homepage-inquiry-panel__scrollable--blue">
+                            <div>
+                                <div class="homepage-inquiry-service-list">
+                                    <h2 class="homepage-inquiry-service-list__heading">Quick Links</h2>
+                                    <ul class="homepage-inquiry-service-list__list">
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="firm.html">
+                                                The Firm
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="lawyers.html">
+                                                Lawyers
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="expertise.html">
+                                                Expertise
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="careers.html">
+                                                Careers
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="contact.html">
+                                                Contact
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="contact.html">
+                                                Consultation
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="gallery.html">
+                                                Gallery
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="homepage-inquiry-service-list">
+                                    <h2 class="homepage-inquiry-service-list__heading">Practice Areas</h2>
+                                    <ul class="homepage-inquiry-service-list__list">
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link"
+                                                href="expertise.html?tab=commercial">
+                                                Commercial and Corporate Practice
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link"
+                                                href="expertise.html?tab=debt">
+                                                Debt Recovery and Banking
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="expertise.html">
+                                                Libel and Media Law
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link"
+                                                href="expertise.html?tab=realestate">
+                                                Real Estate
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="homepage-inquiry-service-list">
+                                    <h2 class="homepage-inquiry-service-list__heading">Inquiries</h2>
+                                    <div class="homepage-inquiry-service-list__item"><span
+                                            class="text-warning">Address:</span> 1B Adekunle Fadjuyi way, GRA Ikeja,
+                                        Lagos</div>
+                                    <div class="homepage-inquiry-service-list__item"><span
+                                            class="text-warning">Tel:</span> <a
+                                            href="tel:+234-123455678">+234-8012345678
+                                        </a></div>
+                                    <div class="homepage-inquiry-service-list__item"><span
+                                            class="text-warning">Email:</span> <a
+                                            href="mailto:info@aakporugo.com">info@aakporugo.com
+                                        </a></div>
+
+                                </div>
+                                <div class="homepage-inquiry-service-list">
+
+                                    <ul class="homepage-inquiry-service-list__list">
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="#">
+                                                Privacy Policy
+                                            </a>
+                                        </li>
+                                        <li class="homepage-inquiry-service-list__item">
+                                            <a class="homepage-inquiry-service-list__link" href="#">
+                                                Use of Cookies
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="assets/public/lib/jquery.js"></script>
+
+                <script src="assets/public/lib/bootstrap.min.js"></script>
+                <script src="assets/public/lib/typed.min.js"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+                <script src="assets/public/bundlecb92.js?v=i67Qduss1tU2MfyuM1jKUA=="></script>
+               
+
+
+</body>
+
+
+</html>
